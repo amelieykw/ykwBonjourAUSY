@@ -1,21 +1,28 @@
+webnginx:
+  image: 'bonjourausy_webnginx:latest'
+  links:
+    - php
+    - angular4
+  ports:
+    - '8080:8080'
+    - '4200:4200'
+  volumes_from:
+    - php
+    - angular4
 mysql:
   environment:
     - MYSQL_DATABASE=bonjourausy
     - MYSQL_ROOT_PASSWORD=admin
   image: 'bonjourausy_mysql:latest'
   volumes:
-    - /var/lib/mysql:/var/lib/mysql
+    - /var/lib/mysql
 php:
-  image: 'bonjourausy_app:latest'
+  image: 'bonjourausy_server:latest'
   links:
     - mysql
   volumes:
-    - ./images/app/src/public:/var/www/html
-webnginx:
-  image: 'bonjourausy_webnginx:latest'
-  links:
-    - php
-  ports:
-    - '8080:80'
-  volumes_from:
-    - php
+    - ./images/server/src/public:/var/www/html
+angular4:
+  image: 'bonjourausy_angular4:latest'
+  volumes:
+    - ./images/angular4/code:/usr/src/app

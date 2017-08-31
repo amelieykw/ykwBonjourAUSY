@@ -40,7 +40,10 @@
 		<div>
 			<p>Choose a file of original data to insert :</p>
 	        <form action = "<?php $_SERVER['PHP_SELF'] ?>" method ="POST">
-	         	<select name = "selected_insert_original_data_file">      
+	         	<select name = "selected_insert_original_data_file">
+	         		<option value="./insert_data/administrateur_original.txt">
+		            	administrateur
+		            </option>      
 		            <option value = "./insert_data/sites_original.txt">
 		            	sites
 		            </option>
