@@ -1,0 +1,8 @@
+# TRUNCATE administrateur;
+
+INSERT INTO administrateur 
+(Nom, Prenom, Email, TelMobile, login, password, Site, isSuperAdmin, DateCreation, DateModification) 
+VALUES
+('Muller', 'Anabelle', 'anabellemuller@ausy.fr', '0667776585', 'anabellemuller', '0667776585', 1, 1, NOW(), NOW()),
+('Dubois', 'Emilie', 'emiliedubois@ausy.fr', '0667877684', 'emiliedubois', '0667877684', 3, 0, NOW(), NOW()),
+('Durand', 'Agothe', 'agothedurand@ausy.fr', '0677064673', 'agothedurand', '0677064673', 13, 0, NOW(), NOW())

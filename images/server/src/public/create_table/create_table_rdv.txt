@@ -1,0 +1,17 @@
+CREATE TABLE IF NOT EXISTS rendezvous (
+	RDVId int(11) NOT NULL PRIMARY KEY AUTO_INCREMENT, 
+	Nom varchar(32) NOT NULL, 
+	Prenom varchar(32) NOT NULL, 
+	ContactId int(11), 
+	HeurePrevu datetime NOT NULL, 
+	HeurePriseEnCharge datetime, 
+	TempsRetard datetime , 
+	isValide Boolean NOT NULL DEFAULT '0', 
+	isRelance1 Boolean NOT NULL DEFAULT '0', 
+	isRelanceBUD Boolean NOT NULL DEFAULT '0', 
+	isRelanceResp Boolean NOT NULL DEFAULT '0', 
+	isRelanceDA Boolean NOT NULL DEFAULT '0', 
+	DateCreation datetime NOT NULL, 
+	DateModification datetime NOT NULL,
+	FOREIGN KEY (ContactId) REFERENCES contact(ContactId) ON UPDATE CASCADE ON DELETE SET NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1

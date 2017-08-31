@@ -1,0 +1,12 @@
+CREATE TABLE IF NOT EXISTS site (
+	SiteId int(11) NOT NULL PRIMARY KEY AUTO_INCREMENT, 
+	Libelle varchar(64) NOT NULL, 
+	BudEmail varchar(32) DEFAULT NULL, 
+	BudMobile varchar(20) DEFAULT NULL, 
+	RespEmail varchar(32) DEFAULT NULL, 
+	RespMobile varchar(20) DEFAULT NULL, 
+	DaMobile varchar(32) DEFAULT NULL, 
+	DaEmail varchar(20) DEFAULT NULL, 
+	DateCreation datetime NOT NULL, 
+	DateModification timestamp NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1

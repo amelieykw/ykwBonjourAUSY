@@ -1,0 +1,8 @@
+# TRUNCATE contact;
+
+INSERT INTO contact 
+(Nom, Prenom, Fonction, TelMobile, email, SiteId, N1Id, N2Id, DateCreation, DateModification) 
+VALUES
+('Muller', 'Anabelle', 1, '0667776585', 'anabellemuller@ausy.fr', 2, 2, 10, NOW(), NOW()),
+('Dubois', 'Emilie', 2, '0667877684', 'emiliedubois@ausy.fr', 2, 2, 10, NOW(), NOW()),
+('Durand', 'Agothe', 3, '0677064673', 'agothedurand@ausy.fr', 2, 2, 10, NOW(), NOW())

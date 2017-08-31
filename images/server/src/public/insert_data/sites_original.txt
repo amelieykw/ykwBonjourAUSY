@@ -1,0 +1,24 @@
+# TRUNCATE site;
+
+INSERT INTO site 
+(SiteId, Libelle, BudEmail, BudMobile, RespEmail, RespMobile, DaMobile, DaEmail, DateCreation, DateModification) 
+VALUES
+(1,'Sèvre', NULL, NULL, NULL, NULL, NULL, NULL, NOW(), NOW()),
+(2,'Aix-en-provence', NULL, NULL, NULL, NULL, NULL, NULL, NOW(), NOW()),
+(3,'Bordeaux', NULL, NULL, NULL, NULL, NULL, NULL, NOW(), NOW()),
+(4,'Brest', NULL, NULL, NULL, NULL, NULL, NULL, NOW(), NOW()),
+(5,'Cherbourg', NULL, NULL, NULL, NULL, NULL, NULL, NOW(), NOW()),
+(6,'Grenoble', NULL, NULL, NULL, NULL, NULL, NULL, NOW(), NOW()),
+(7,'Lannion', NULL, NULL, NULL, NULL, NULL, NULL, NOW(), NOW()),
+(8,'Le mans', NULL, NULL, NULL, NULL, NULL, NULL, NOW(), NOW()),
+(9,'Lille', NULL, NULL, NULL, NULL, NULL, NULL, NOW(), NOW()),
+(10,'Lyon', NULL, NULL, NULL, NULL, NULL, NULL, NOW(), NOW()),
+(11,'Montpellier', NULL, NULL, NULL, NULL, NULL, NULL, NOW(), NOW()),
+(13,'Nantes', NULL, NULL, NULL, NULL, NULL, NULL, NOW(), NOW()),
+(14,'Niort', NULL, NULL, NULL, NULL, NULL, NULL, NOW(), NOW()),
+(15,'Orléans', NULL, NULL, NULL, NULL, NULL, NULL, NOW(), NOW()),
+(16,'Pierrelatte', NULL, NULL, NULL, NULL, NULL, NULL, NOW(), NOW()),
+(17,'Rennes', NULL, NULL, NULL, NULL, NULL, NULL, NOW(), NOW()),
+(18,'Strasbourg', NULL, NULL, NULL, NULL, NULL, NULL, NOW(), NOW()),
+(19,'Toulouse', NULL, NULL, NULL, NULL, NULL, NULL, NOW(), NOW()),
+(20,'Tours', NULL, NULL, NULL, NULL, NULL, NULL, NOW(), NOW())

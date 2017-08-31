@@ -1,0 +1,13 @@
+CREATE TABLE IF NOT EXISTS administrateur (
+	AdminId int(11) NOT NULL PRIMARY KEY AUTO_INCREMENT, 
+	Nom varchar(32) NOT NULL, 
+	Prenom varchar(32) NOT NULL, 
+	Email varchar(128), 
+	TelMobile varchar(20) NOT NULL, 
+	login varchar(32) NOT NULL, 
+	password varchar(32) NOT NULL, 
+	Site int(11) NOT NULL, 
+	isSuperAdmin Boolean NOT NULL DEFAULT '0', 
+	DateCreation datetime NOT NULL, 
+	DateModification timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+) ENGINE=InnoDB DEFAULT CHARSET=latin1

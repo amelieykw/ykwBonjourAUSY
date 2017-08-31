@@ -1,0 +1,16 @@
+CREATE TABLE IF NOT EXISTS contact (
+	ContactId int(11) NOT NULL PRIMARY KEY AUTO_INCREMENT, 
+	Nom varchar(32) NOT NULL, 
+	Prenom varchar(32) NOT NULL, 
+	Fonction int(1) NOT NULL, 
+	TelMobile varchar(20) NOT NULL, 
+	email varchar(32) NOT NULL, 
+	SiteId int(11) NOT NULL, 
+	N1Id int(11) NOT NULL, 
+	N2Id int(11) NOT NULL, 
+	DateCreation datetime NOT NULL,
+	DateModification timestamp NOT NULL,
+	FOREIGN KEY (SiteId) REFERENCES site(SiteId) ON UPDATE CASCADE ON DELETE CASCADE, 
+	FOREIGN KEY (N1Id) REFERENCES site(SiteId) ON UPDATE CASCADE ON DELETE CASCADE,
+	FOREIGN KEY (N2Id) REFERENCES site(SiteId) ON UPDATE CASCADE ON DELETE CASCADE
+) ENGINE=InnoDB DEFAULT CHARSET=latin1
