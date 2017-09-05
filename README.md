@@ -1,5 +1,33 @@
 # ykwBonjourAUSY
 
+**Summary**
+[Description of \<Bonjour AUSY>](https://github.com/amelieykw/ykwBonjourAUSY#description-of-bonjour-ausy)
+- [Working environment](https://github.com/amelieykw/ykwBonjourAUSY#working-environment)
+- [The structure of the whole project](https://github.com/amelieykw/ykwBonjourAUSY#the-structure-of-the-whole-project)
+- [Server side (Docker = Nginx + PHP + MySQL)](https://github.com/amelieykw/ykwBonjourAUSY#server-side-docker--nginx--php--mysql)
+	- [MySQL](https://github.com/amelieykw/ykwBonjourAUSY#mysql)
+		- [Structure](https://github.com/amelieykw/ykwBonjourAUSY#structure)
+		- [Usage](https://github.com/amelieykw/ykwBonjourAUSY#usage)
+		- [Description of this container](https://github.com/amelieykw/ykwBonjourAUSY#description-of-this-container)
+	- [PHP (The core code of server side)](https://github.com/amelieykw/ykwBonjourAUSY#php-the-core-code-of-server-side)
+		- [Structure](https://github.com/amelieykw/ykwBonjourAUSY#structure-1)
+		- [Usage](https://github.com/amelieykw/ykwBonjourAUSY#usage-1)
+		- [Description of this container](https://github.com/amelieykw/ykwBonjourAUSY#description-of-this-container-1)
+			- [1. create_table](https://github.com/amelieykw/ykwBonjourAUSY#1-create_table)
+			- [2. insert_data](https://github.com/amelieykw/ykwBonjourAUSY#2-insert_data)
+			- [3. fetch_data](https://github.com/amelieykw/ykwBonjourAUSY#3-fetch_data)
+			- [4. authentication](https://github.com/amelieykw/ykwBonjourAUSY#4-authentication)
+			- [5. hotesse](https://github.com/amelieykw/ykwBonjourAUSY#5-hotesse)
+			- [6. email_alert](https://github.com/amelieykw/ykwBonjourAUSY#6-email_alert)	
+	- [Nginx (The most outside container of the server)](https://github.com/amelieykw/ykwBonjourAUSY#nginx-the-most-outside-container-of-the-server)
+		- [Structure](https://github.com/amelieykw/ykwBonjourAUSY#structure-2)
+		- [Usage](https://github.com/amelieykw/ykwBonjourAUSY#usage-2)
+		- [Description of this container](https://github.com/amelieykw/ykwBonjourAUSY#description-of-this-container-2)
+- [docker-compose.yml](https://github.com/amelieykw/ykwBonjourAUSY#docker-composeyml)
+	- [Verify the result](https://github.com/amelieykw/ykwBonjourAUSY#verify-the-result)
+	- [Interact with the container MySQL](https://github.com/amelieykw/ykwBonjourAUSY#to-interact-with-the-container-mysql)
+	- [Interact with the container Nginx](https://github.com/amelieykw/ykwBonjourAUSY#to-interact-with-the-container-nginx)
+
 # Description of \<Bonjour AUSY>
 This project <Bonjour AUSY> is for simulating the elec-signature process. 
 
@@ -410,7 +438,7 @@ docker-compose ps
 ```
 to see if all the containers have been created well and work well. If one container has been well created and works well, its status will be "Up".
 
-#### Verify the result
+##### Verify the result
 When you see "Up" for each container, you can open the browser and enter 
 ```
 <docker-machine ip>:8080
@@ -432,7 +460,7 @@ php:
 ```
 
 
-#### To interact with the container MySQL
+##### To interact with the container MySQL
 To enter one container MySQL:
 ```
 docker exec -it ykwBonjourAUSY_mysql_1 /bin/bash
@@ -464,7 +492,7 @@ Then all will be the syntax of MySQL.
 3. Use `exit` to leave the MySQL working environment and the MySQL container working environment.
 
 
-#### To interact with the container Nginx
+##### To interact with the container Nginx
 To enter one container Nginx:
 ```
 docker exec -it ykwBonjourAUSY_webnginx_1 /bin/bash
