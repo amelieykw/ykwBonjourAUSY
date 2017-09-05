@@ -1,5 +1,7 @@
 # ykwBonjourAUSY
 
+This README.md is an instruction and a description of the code for the project <Bonjour AUSY>.
+
 **Summary**
 
 [Description of \<Bonjour AUSY>](https://github.com/amelieykw/ykwBonjourAUSY#description-of-bonjour-ausy)
