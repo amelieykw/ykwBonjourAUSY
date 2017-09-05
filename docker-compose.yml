@@ -2,13 +2,10 @@ webnginx:
   image: 'bonjourausy_webnginx:latest'
   links:
     - php
-    - angular4
   ports:
     - '8080:8080'
-    - '4200:4200'
   volumes_from:
     - php
-    - angular4
 mysql:
   environment:
     - MYSQL_DATABASE=bonjourausy
@@ -22,7 +19,4 @@ php:
     - mysql
   volumes:
     - ./images/server/src/public:/var/www/html
-angular4:
-  image: 'bonjourausy_angular4:latest'
-  volumes:
-    - ./images/angular4/code:/usr/src/app
+

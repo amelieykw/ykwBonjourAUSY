@@ -6,4 +6,4 @@ FROM nginx
 #COPY ./nginx.conf /etc/nginx/nginx.conf
 #COPY ./proxy.conf /etc/nginx/conf.d/proxy.conf
 COPY ./php7_fpm.conf /etc/nginx/conf.d/default.conf
-COPY ./bonjourausy.conf /etc/nginx/conf.d/bonjourausy.conf
+#COPY ./bonjourausy.conf /etc/nginx/conf.d/bonjourausy.conf
