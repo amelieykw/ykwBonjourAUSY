@@ -502,23 +502,6 @@ ls /var/lib/mysql
 ```
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+## Contact
+If there're some questions, please contact the developer YU Kaiwen:
+yu.kaiwen.amelie@gmail.com
