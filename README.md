@@ -30,6 +30,8 @@ This README.md is an instruction and a description of the code for the project <
 	- [Verify the result](https://github.com/amelieykw/ykwBonjourAUSY#verify-the-result)
 	- [Interact with the container MySQL](https://github.com/amelieykw/ykwBonjourAUSY#to-interact-with-the-container-mysql)
 	- [Interact with the container Nginx](https://github.com/amelieykw/ykwBonjourAUSY#to-interact-with-the-container-nginx)
+
+[The work remains to do](https://github.com/amelieykw/ykwBonjourAUSY#the-work-remain-to-do)
 [Contact](https://github.com/amelieykw/ykwBonjourAUSY#contact)
 
 # Description of \<Bonjour AUSY>
@@ -532,6 +534,27 @@ Then you can see the data of MySQL from the webnginx container :
 ```
 ls /var/lib/mysql
 ```
+
+## The work remains to do
+1. **Server side**
+- Add Angular 4 Module to Docker (If someone realize this, please write here the solution. Thank you!)
+- Deploy the whole application to Docker Cloud
+
+2. **Angular 4**
+- For the from of authentication (Reactive Form) and new RDV (Template-driven Form), it needs to add form validation :
+	- min/max length
+	- error check
+- For the form of authentication (Reactive Form), it needs to add the function of "Remember me" (it's all about localStorage and SessionStorage).
+- The administrateur part 
+
+3. **Android tablette**
+- The Candidate Mode 
+	- bug when loading for more data
+	- divide the RDVs, those whose isValide=0 and those whose isValide=1, into two parts haven't done well
+	- the checkbox 
+	
+4. **For all**
+- the function "calculate the time" then "send email and SMS" hasn't been done, because it needs to deploy the whole application online first.
 
 
 ## Contact
